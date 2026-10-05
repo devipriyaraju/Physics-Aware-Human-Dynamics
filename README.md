@@ -293,11 +293,11 @@ A full preprocessing rerun from raw files still requires the GroundLink MoSh++ a
 
 ## Compute environment
 
-The original notebook ran on an NVIDIA A100-SXM4-40GB MIG 3g.20gb device. The hybrid experiment used 64-frame windows, stride 16, 60 epochs, batch size 256, AdamW, OneCycleLR, and random yaw augmentation.
+The entire project ran on an NVIDIA A100-SXM4-40GB MIG 3g.20gb device. The hybrid experiment used 64-frame windows, stride 16, 60 epochs, batch size 256, AdamW, OneCycleLR, and random yaw augmentation.
 
-The notebook sets fixed seeds for hybrid training, synthetic root corruption, and mesh segment parameter estimation.
+The project sets fixed seeds for hybrid training, synthetic root corruption, and mesh segment parameter estimation.
 
-## Scope relative to the target role
+## Scope
 
 This project directly demonstrates articulated human motion processing, SMPL-H body modeling, temporal learning, biomechanical constraints, contact reasoning, Newton-Euler inverse dynamics, momentum balance, and a tracker-to-physics pipeline.
 
