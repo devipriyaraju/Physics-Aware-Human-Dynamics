@@ -2,7 +2,7 @@
 
 Ground reaction forces and joint torques from 3D human motion using PyTorch, SMPL-H, GroundLink, whole-body momentum, Newton-Euler inverse dynamics, and temporal learning.
 
-This repository is a modular reconstruction of the experiments in `notebooks/original_experiment.ipynb`. It focuses on a question that matters for articulated human tracking and robotics: how much physical information can be recovered from motion alone, and where does a learned temporal model add value?
+Resrach Question: how much physical information can be recovered from motion alone, and where does a learned temporal model add value?
 
 > The original source code and repository-specific material are proprietary and provided for review only. See `LICENSE`. GroundLink, SMPL-H, and other third-party assets keep their own licenses and are not redistributed here.
 
@@ -11,10 +11,6 @@ This repository is a modular reconstruction of the experiments in `notebooks/ori
 The experiments use 336 retained GroundLink force-plate trials from 7 subjects after motion-force synchronization, subject calibration, and dynamics consistency filtering. The pipeline derives segment mass fractions, centers of mass, and inertia tensors from SMPL-H geometry, computes full-body Newton-Euler inverse dynamics, estimates total ground force from whole-body momentum, and learns how to divide that force between the feet.
 
 The central model is a hybrid force estimator. Whole-body dynamics supplies total ground force. A temporal convolutional network learns only the left-right split and a horizontal residual pair. In leave-one-subject-out evaluation over all 7 subjects, the hybrid reaches 0.059 body weights per-foot vertical force RMSE. The direct network reaches 0.072 body weights and the motion-contact physics rule reaches 0.090 body weights. This is an 18 percent reduction relative to the direct network and a 34 percent reduction relative to the physics-only split.
-
-## Resume alignment
-
-**Physics-Aware Human Dynamics: Ground Forces and Joint Torques from Motion | PyTorch, SMPL-H, GroundLink, Inverse Dynamics**
 
 - Recovered ground reaction forces and joint torques from 3D human motion using 336 retained GroundLink force-plate trials from 7 subjects.
 - Derived body segment mass fractions, centers of mass, and inertia tensors from the SMPL-H mesh.
