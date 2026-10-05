@@ -1,0 +1,36 @@
+seed: 0
+device: auto
+target_fps: 30
+lowpass_hz: 6.0
+gravity: 9.81
+friction_coefficient: 0.8
+
+paths:
+  smplh_dir: data/raw/smplh
+  groundlink_force_dir: data/raw/groundlink/force
+  groundlink_moshpp_dir: data/raw/groundlink/moshpp
+  processed_cache: data/processed/dynamics_trials.pt
+  tracker_checkpoint: checkpoints/t3d_offline.pt
+  results_dir: results
+
+hybrid:
+  window: 64
+  stride: 16
+  epochs: 60
+  batch_size: 256
+  learning_rate: 0.001
+  width: 256
+
+refinement:
+  steps: 300
+  learning_rate: 0.02
+  weights:
+    position: 0.01
+    velocity: 0.05
+    jerk: 0.000002
+    foot_slide: 1.0
+    foot_height: 20.0
+    penetration: 100.0
+    flight: 0.002
+    pulling_force: 0.002
+    friction: 0.002

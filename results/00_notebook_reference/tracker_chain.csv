@@ -1,0 +1,3 @@
+,"vertical force per foot, RMSE (BW)","total vertical force, RMSE (BW)"
+"true pose, 30 Hz",0.052,0.046
+tracked pose,0.06,0.048

@@ -1,0 +1,6 @@
+,root error (cm),"total force error, RMSE (BW)","force during flight, mean (BW; should be 0)"
+corrupted,5.709,0.305,0.291
+smoothing only,5.702,0.268,0.258
+smoothing + contact,5.415,0.205,0.346
+smoothing + contact + dynamics,6.022,0.177,0.187
+true root (reference),0.0,0.085,0.09

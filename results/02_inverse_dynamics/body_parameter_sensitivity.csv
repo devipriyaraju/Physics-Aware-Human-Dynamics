@@ -1,0 +1,7 @@
+joint_group,typical_size_mesh_Nm_per_kg,mesh_vs_table_difference_Nm_per_kg,difference_percent
+ankle,0.329,0.004,1.1
+knee,0.42,0.012,2.861
+hip,0.501,0.022,4.459
+lower back,0.442,0.111,25.173
+shoulder,0.071,0.026,36.897
+elbow,0.034,0.018,52.642

@@ -1,0 +1,36 @@
+subject,method,vertical_force_per_foot_RMSE_BW
+s001,"physics rule, measured contact (upper bound)",0.075
+s001,"physics rule, contact from motion",0.126
+s001,"network, direct (no physics)",0.129
+s001,hybrid: physics total + learned split,0.113
+s001,hybrid + physics quantities as input,0.109
+s002,"physics rule, measured contact (upper bound)",0.072
+s002,"physics rule, contact from motion",0.074
+s002,"network, direct (no physics)",0.057
+s002,hybrid: physics total + learned split,0.043
+s002,hybrid + physics quantities as input,0.044
+s003,"physics rule, measured contact (upper bound)",0.083
+s003,"physics rule, contact from motion",0.089
+s003,"network, direct (no physics)",0.057
+s003,hybrid: physics total + learned split,0.052
+s003,hybrid + physics quantities as input,0.051
+s004,"physics rule, measured contact (upper bound)",0.076
+s004,"physics rule, contact from motion",0.078
+s004,"network, direct (no physics)",0.056
+s004,hybrid: physics total + learned split,0.046
+s004,hybrid + physics quantities as input,0.044
+s005,"physics rule, measured contact (upper bound)",0.057
+s005,"physics rule, contact from motion",0.061
+s005,"network, direct (no physics)",0.078
+s005,hybrid: physics total + learned split,0.056
+s005,hybrid + physics quantities as input,0.047
+s006,"physics rule, measured contact (upper bound)",0.096
+s006,"physics rule, contact from motion",0.107
+s006,"network, direct (no physics)",0.071
+s006,hybrid: physics total + learned split,0.061
+s006,hybrid + physics quantities as input,0.055
+s007,"physics rule, measured contact (upper bound)",0.095
+s007,"physics rule, contact from motion",0.095
+s007,"network, direct (no physics)",0.053
+s007,hybrid: physics total + learned split,0.044
+s007,hybrid + physics quantities as input,0.044

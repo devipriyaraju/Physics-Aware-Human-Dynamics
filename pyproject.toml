@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "physics-aware-human-dynamics"
+version = "0.1.0"
+description = "Ground reaction forces and joint torques from SMPL-H motion using inverse dynamics and hybrid temporal learning"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.26",
+  "pandas>=2.1",
+  "scipy>=1.11",
+  "matplotlib>=3.8",
+  "torch>=2.2",
+  "PyYAML>=6.0",
+  "tqdm>=4.66"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.scripts]
+phdynamics = "physics_human_dynamics.cli:main"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

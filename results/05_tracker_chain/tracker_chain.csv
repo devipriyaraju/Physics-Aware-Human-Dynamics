@@ -1,0 +1,3 @@
+pose_source,vertical_force_per_foot_RMSE_BW,total_vertical_force_RMSE_BW
+"true pose, 30 Hz",0.052,0.046
+tracked pose,0.06,0.048

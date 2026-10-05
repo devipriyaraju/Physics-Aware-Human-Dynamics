@@ -1,0 +1,8 @@
+metric,"physics, measured contact","physics, contact from motion","physics, both feet always down"
+"vertical force per foot, RMSE (BW)",0.083,0.105,0.133
+"total vertical force, RMSE (BW)",0.048,0.048,0.048
+"zero-moment point vs measured CoP, median (cm)",3.026,3.026,3.026
+frames needing a pulling force (%),1.081,1.081,1.081
+frames outside the friction cone (%),0.111,0.077,2.184
+no contact but force > 0.2 BW (%),0.15,0.141,0.0
+"single support, ZMP > 20 cm from the foot (%)",0.527,0.282,0.0
